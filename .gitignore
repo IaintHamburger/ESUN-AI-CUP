@@ -14,3 +14,8 @@ dplans/
 
 .vscode/
 .idea/
+# Simple agent: account state, private adapters, credentials and generated plans.
+.venv-simple/
+runtime/
+output/
+submit_adapter.json

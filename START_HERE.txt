@@ -1,0 +1,6 @@
+Windows: Double-click START_DEMO.cmd.
+Read SIMPLE_README.md and docs/ESUN_Simple_Agent_Manual.pdf.
+Demo is immediately runnable, historical and NEVER submitted.
+Live mode needs one-time real credentials + team-verified organizer adapter.
+Do NOT run legacy run_daily.py and run_simple.py on the same day.
+This package contains PR-ready code/patch. No remote PR has been created.

@@ -1,0 +1,36 @@
+{
+  "checked_on_utc": "2026-10-25",
+  "base_repository": "https://github.com/IaintHamburger/ESUN-AI-CUP",
+  "base_commit": "613778b08bcc1b2817bc2ab88746b08d9da58460",
+  "status": "LOCAL_VALIDATED_NOT_LIVE_SUBMITTED",
+  "files": [
+    {
+      "path": "參考資料/D-Plan.schema.json",
+      "sha256": "278d7c28bfbc0a5a0ec7635c7a285c95972935f8a0126af21ecd11988db85338"
+    },
+    {
+      "path": "參考資料/D-Plan_撰寫指南.md",
+      "sha256": "854950eed557158177b4c288d79545afbe7b8677c5c23095034b0d7e30cbcd19"
+    },
+    {
+      "path": "參考資料/玉山挑戰賽_投資組合及交易標的_150檔清單_v1.pdf",
+      "sha256": "b6a17beb84cfbfe3db8629d6af8c2938b4443114de0d82e333bc487e4c7d8bd6"
+    },
+    {
+      "path": "參考資料/玉山挑戰賽_主動型ETF列表_v1.pdf",
+      "sha256": "d19cb228af7569b662cc0cfd741c726a4016ec3cc37536bf1c1d7bd891ec49d5"
+    },
+    {
+      "path": "simple_agent/universe.json",
+      "sha256": "e044f0f05733ab67f2e36af151b2422c6b47ababec4337b714067d35f243409e"
+    },
+    {
+      "path": "simple_agent/etfs.json",
+      "sha256": "bb850e386d18d32997a96ab536921a2d32abba33513dbeef8013bb008a3ee04f"
+    },
+    {
+      "path": "simple_agent/fixtures/market_2026-10-22.json.gz",
+      "sha256": "06acfa06bd24cf96c24ea4daabeb4af63a02bc0ff1cc286d545307a5970ae739"
+    }
+  ]
+}

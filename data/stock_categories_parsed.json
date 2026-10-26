@@ -1,0 +1,732 @@
+[
+  {
+    "category": "航運業",
+    "code": "2603",
+    "name": "長榮"
+  },
+  {
+    "category": "航運業",
+    "code": "2609",
+    "name": "陽明"
+  },
+  {
+    "category": "航運業",
+    "code": "2615",
+    "name": "萬海"
+  },
+  {
+    "category": "航運業",
+    "code": "2610",
+    "name": "華航"
+  },
+  {
+    "category": "航運業",
+    "code": "2618",
+    "name": "長榮航"
+  },
+  {
+    "category": "電信通訊",
+    "code": "2412",
+    "name": "中華電"
+  },
+  {
+    "category": "電信通訊",
+    "code": "3045",
+    "name": "台灣大"
+  },
+  {
+    "category": "電信通訊",
+    "code": "4904",
+    "name": "遠傳"
+  },
+  {
+    "category": "塑化與橡膠",
+    "code": "6505",
+    "name": "台塑化"
+  },
+  {
+    "category": "水泥",
+    "code": "1101",
+    "name": "台泥"
+  },
+  {
+    "category": "紡織纖維",
+    "code": "1402",
+    "name": "遠東新"
+  },
+  {
+    "category": "紡織纖維",
+    "code": "8932",
+    "name": "智通"
+  },
+  {
+    "category": "鋼鐵金屬",
+    "code": "2002",
+    "name": "中鋼"
+  },
+  {
+    "category": "鋼鐵金屬",
+    "code": "8415",
+    "name": "大國鋼"
+  },
+  {
+    "category": "汽車與機械零件",
+    "code": "2207",
+    "name": "和泰車"
+  },
+  {
+    "category": "汽車與機械零件 1590亞德客-KY重電與線纜",
+    "code": "1519",
+    "name": "華城"
+  },
+  {
+    "category": "重電與線纜",
+    "code": "1504",
+    "name": "東元"
+  },
+  {
+    "category": "重電與線纜",
+    "code": "1605",
+    "name": "華新"
+  },
+  {
+    "category": "食品與零售通路",
+    "code": "1216",
+    "name": "統一"
+  },
+  {
+    "category": "食品與零售通路",
+    "code": "2912",
+    "name": "統一超"
+  },
+  {
+    "category": "食品與零售通路",
+    "code": "5903",
+    "name": "全家"
+  },
+  {
+    "category": "金融",
+    "code": "2881",
+    "name": "富邦金"
+  },
+  {
+    "category": "金融",
+    "code": "2882",
+    "name": "國泰金"
+  },
+  {
+    "category": "金融",
+    "code": "2883",
+    "name": "凱基金"
+  },
+  {
+    "category": "金融",
+    "code": "2880",
+    "name": "華南金"
+  },
+  {
+    "category": "金融",
+    "code": "2884",
+    "name": "玉山金"
+  },
+  {
+    "category": "金融",
+    "code": "2885",
+    "name": "元大金"
+  },
+  {
+    "category": "金融",
+    "code": "2886",
+    "name": "兆豐金"
+  },
+  {
+    "category": "金融",
+    "code": "2890",
+    "name": "永豐金"
+  },
+  {
+    "category": "金融 2887台新新光金金融",
+    "code": "2891",
+    "name": "中信金"
+  },
+  {
+    "category": "金融",
+    "code": "2892",
+    "name": "第一金"
+  },
+  {
+    "category": "金融",
+    "code": "2801",
+    "name": "彰銀"
+  },
+  {
+    "category": "金融",
+    "code": "2834",
+    "name": "臺企銀"
+  },
+  {
+    "category": "金融",
+    "code": "2812",
+    "name": "台中銀"
+  },
+  {
+    "category": "金融",
+    "code": "5880",
+    "name": "合庫金"
+  },
+  {
+    "category": "金融",
+    "code": "5876",
+    "name": "上海商銀"
+  },
+  {
+    "category": "金融",
+    "code": "6023",
+    "name": "元大期"
+  },
+  {
+    "category": "金融",
+    "code": "5871",
+    "name": "中租-KY"
+  },
+  {
+    "category": "電子通路",
+    "code": "2347",
+    "name": "聯強"
+  },
+  {
+    "category": "電子通路",
+    "code": "3036",
+    "name": "文曄"
+  },
+  {
+    "category": "電子通路",
+    "code": "3702",
+    "name": "大聯大"
+  },
+  {
+    "category": "生技醫療",
+    "code": "6446",
+    "name": "藥華藥"
+  },
+  {
+    "category": "生技醫療",
+    "code": "6919",
+    "name": "康霈"
+  },
+  {
+    "category": "生技醫療",
+    "code": "4123",
+    "name": "晟德"
+  },
+  {
+    "category": "塑化與橡膠",
+    "code": "1301",
+    "name": "台塑"
+  },
+  {
+    "category": "塑化與橡膠",
+    "code": "1303",
+    "name": "南亞"
+  },
+  {
+    "category": "塑化與橡膠",
+    "code": "1326",
+    "name": "台化"
+  },
+  {
+    "category": "IC設計",
+    "code": "2454",
+    "name": "聯發科"
+  },
+  {
+    "category": "IC設計",
+    "code": "2379",
+    "name": "瑞昱"
+  },
+  {
+    "category": "IC設計",
+    "code": "3034",
+    "name": "聯詠"
+  },
+  {
+    "category": "IC設計",
+    "code": "5274",
+    "name": "信驊"
+  },
+  {
+    "category": "IC設計",
+    "code": "4966",
+    "name": "譜瑞-KY"
+  },
+  {
+    "category": "IC設計",
+    "code": "3227",
+    "name": "原相"
+  },
+  {
+    "category": "晶圓代工",
+    "code": "2330",
+    "name": "台積電"
+  },
+  {
+    "category": "晶圓代工",
+    "code": "2303",
+    "name": "聯電"
+  },
+  {
+    "category": "晶圓代工",
+    "code": "6770",
+    "name": "力積電"
+  },
+  {
+    "category": "晶圓代工",
+    "code": "5347",
+    "name": "世界"
+  },
+  {
+    "category": "封測 3711日月光投控封測",
+    "code": "2449",
+    "name": "京元電子"
+  },
+  {
+    "category": "封測",
+    "code": "6239",
+    "name": "力成"
+  },
+  {
+    "category": "封測",
+    "code": "6147",
+    "name": "頎邦"
+  },
+  {
+    "category": "封測",
+    "code": "3264",
+    "name": "欣銓"
+  },
+  {
+    "category": "封測",
+    "code": "3374",
+    "name": "精材"
+  },
+  {
+    "category": "探針卡與測試介面",
+    "code": "6223",
+    "name": "旺矽"
+  },
+  {
+    "category": "探針卡與測試介面",
+    "code": "6515",
+    "name": "穎崴"
+  },
+  {
+    "category": "探針卡與測試介面",
+    "code": "6510",
+    "name": "精測"
+  },
+  {
+    "category": "探針卡與測試介面",
+    "code": "7828",
+    "name": "創新服務"
+  },
+  {
+    "category": "導線架",
+    "code": "6548",
+    "name": "長科"
+  },
+  {
+    "category": "ABF載板",
+    "code": "3037",
+    "name": "欣興"
+  },
+  {
+    "category": "ABF載板",
+    "code": "3189",
+    "name": "景碩"
+  },
+  {
+    "category": "ABF載板",
+    "code": "8046",
+    "name": "南電"
+  },
+  {
+    "category": "玻布",
+    "code": "1802",
+    "name": "台玻"
+  },
+  {
+    "category": "PCB (硬板/軟板)",
+    "code": "4958",
+    "name": "臻鼎-KY"
+  },
+  {
+    "category": "PCB (硬板/軟板)",
+    "code": "2368",
+    "name": "金像電"
+  },
+  {
+    "category": "PCB (硬板/軟板)",
+    "code": "2313",
+    "name": "華通"
+  },
+  {
+    "category": "PCB (硬板/軟板)",
+    "code": "3044",
+    "name": "健鼎"
+  },
+  {
+    "category": "CCL (銅箔基板)",
+    "code": "2383",
+    "name": "台光電"
+  },
+  {
+    "category": "CCL (銅箔基板)",
+    "code": "6274",
+    "name": "台燿"
+  },
+  {
+    "category": "CCL (銅箔基板)",
+    "code": "8358",
+    "name": "金居"
+  },
+  {
+    "category": "玻璃布",
+    "code": "1815",
+    "name": "富喬"
+  },
+  {
+    "category": "電源管理",
+    "code": "2308",
+    "name": "台達電"
+  },
+  {
+    "category": "電源管理",
+    "code": "2301",
+    "name": "光寶科"
+  },
+  {
+    "category": "電源管理",
+    "code": "6415",
+    "name": "矽力-KY"
+  },
+  {
+    "category": "BBU (備用電池系統)",
+    "code": "6121",
+    "name": "新普"
+  },
+  {
+    "category": "BBU (備用電池系統)",
+    "code": "3211",
+    "name": "順達"
+  },
+  {
+    "category": "被動元件",
+    "code": "2327",
+    "name": "國巨"
+  },
+  {
+    "category": "散熱",
+    "code": "3017",
+    "name": "奇鋐"
+  },
+  {
+    "category": "散熱",
+    "code": "3324",
+    "name": "雙鴻"
+  },
+  {
+    "category": "散熱",
+    "code": "3653",
+    "name": "健策"
+  },
+  {
+    "category": "網通",
+    "code": "2345",
+    "name": "智邦"
+  },
+  {
+    "category": "光通訊",
+    "code": "3363",
+    "name": "上詮"
+  },
+  {
+    "category": "光通訊",
+    "code": "4979",
+    "name": "華星光"
+  },
+  {
+    "category": "光通訊",
+    "code": "3163",
+    "name": "波羅威"
+  },
+  {
+    "category": "光通訊",
+    "code": "3081",
+    "name": "聯亞"
+  },
+  {
+    "category": "光通訊",
+    "code": "3105",
+    "name": "穩懋"
+  },
+  {
+    "category": "光通訊",
+    "code": "4991",
+    "name": "環宇-KY"
+  },
+  {
+    "category": "光通訊",
+    "code": "3665",
+    "name": "貿聯-KY"
+  },
+  {
+    "category": "低軌衛星",
+    "code": "3491",
+    "name": "昇達科"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2317",
+    "name": "鴻海"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2382",
+    "name": "廣達"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "6669",
+    "name": "緯穎"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2357",
+    "name": "華碩"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "4938",
+    "name": "和碩"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "3231",
+    "name": "緯創"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2376",
+    "name": "技嘉"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2356",
+    "name": "英業達"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2324",
+    "name": "仁寶"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "8210",
+    "name": "勤誠"
+  },
+  {
+    "category": "伺服器與代工組裝",
+    "code": "2377",
+    "name": "微星"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "2408",
+    "name": "南亞科"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "2344",
+    "name": "華邦電"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "2337",
+    "name": "旺宏"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "8299",
+    "name": "群聯"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "2451",
+    "name": "創見"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "3260",
+    "name": "威剛"
+  },
+  {
+    "category": "記憶體與模組",
+    "code": "5289",
+    "name": "宜鼎"
+  },
+  {
+    "category": "光學鏡頭與感測",
+    "code": "3008",
+    "name": "大立光"
+  },
+  {
+    "category": "光學鏡頭與感測",
+    "code": "6789",
+    "name": "采鈺"
+  },
+  {
+    "category": "面板",
+    "code": "3481",
+    "name": "群創"
+  },
+  {
+    "category": "面板",
+    "code": "2409",
+    "name": "友達"
+  },
+  {
+    "category": "電子紙",
+    "code": "8069",
+    "name": "元太"
+  },
+  {
+    "category": "機器人 3718中光電投控機器人",
+    "code": "7750",
+    "name": "新代"
+  },
+  {
+    "category": "工業電腦",
+    "code": "2395",
+    "name": "研華"
+  },
+  {
+    "category": "軟體與遊戲",
+    "code": "3293",
+    "name": "鈊象"
+  },
+  {
+    "category": "矽智財(IP)",
+    "code": "3443",
+    "name": "創意"
+  },
+  {
+    "category": "矽智財(IP)",
+    "code": "3661",
+    "name": "世芯-KY"
+  },
+  {
+    "category": "矽智財(IP)",
+    "code": "3529",
+    "name": "力旺"
+  },
+  {
+    "category": "半導體設備",
+    "code": "2360",
+    "name": "致茂"
+  },
+  {
+    "category": "半導體設備",
+    "code": "7769",
+    "name": "鴻勁"
+  },
+  {
+    "category": "半導體設備",
+    "code": "3680",
+    "name": "家登"
+  },
+  {
+    "category": "半導體設備",
+    "code": "6187",
+    "name": "萬潤"
+  },
+  {
+    "category": "半導體設備",
+    "code": "3131",
+    "name": "弘塑"
+  },
+  {
+    "category": "廠務工程",
+    "code": "2404",
+    "name": "漢唐"
+  },
+  {
+    "category": "廠務工程",
+    "code": "6139",
+    "name": "亞翔"
+  },
+  {
+    "category": "廠務工程",
+    "code": "5536",
+    "name": "聖暉"
+  },
+  {
+    "category": "矽晶圓",
+    "code": "6488",
+    "name": "環球晶"
+  },
+  {
+    "category": "矽晶圓",
+    "code": "6182",
+    "name": "合晶"
+  },
+  {
+    "category": "矽晶圓",
+    "code": "5483",
+    "name": "中美晶"
+  },
+  {
+    "category": "半導體材料與化學",
+    "code": "4749",
+    "name": "新應材"
+  },
+  {
+    "category": "半導體材料與化學",
+    "code": "4772",
+    "name": "臺特化"
+  },
+  {
+    "category": "半導體材料與化學",
+    "code": "7734",
+    "name": "印能科技"
+  },
+  {
+    "category": "半導體材料與化學",
+    "code": "1785",
+    "name": "光洋科"
+  },
+  {
+    "category": "連接器與零組件",
+    "code": "3533",
+    "name": "嘉澤"
+  },
+  {
+    "category": "連接器與零組件",
+    "code": "6290",
+    "name": "良維"
+  },
+  {
+    "category": "連接器與零組件",
+    "code": "7751",
+    "name": "崧騰"
+  },
+  {
+    "category": "滑軌",
+    "code": "2059",
+    "name": "川湖"
+  },
+  {
+    "category": "滑軌",
+    "code": "6584",
+    "name": "南俊國際"
+  }
+]

@@ -19,3 +19,6 @@ dplans/
 runtime/
 output/
 submit_adapter.json
+
+# Local crawler market data (regenerated daily by crawl_market_data.py)
+data/market_history/

@@ -1,0 +1,902 @@
+{
+  "2330": {
+    "name": "台積電",
+    "industry": "晶圓代工",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2883": {
+    "name": "凱基金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2454": {
+    "name": "聯發科",
+    "industry": "IC設計",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3443": {
+    "name": "創意",
+    "industry": "矽智財 (IP)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2308": {
+    "name": "台達電",
+    "industry": "電源管理",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3653": {
+    "name": "健策",
+    "industry": "散熱",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2317": {
+    "name": "鴻海",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2395": {
+    "name": "研華",
+    "industry": "工業電腦",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3711": {
+    "name": "日月光投控",
+    "industry": "封測",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2301": {
+    "name": "光寶科",
+    "industry": "電源管理",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2881": {
+    "name": "富邦金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "6446": {
+    "name": "藥華藥",
+    "industry": "生技醫療",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2383": {
+    "name": "台光電",
+    "industry": "CCL (銅箔基板)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "4958": {
+    "name": "臻鼎-KY",
+    "industry": "PCB (硬板/軟板)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2303": {
+    "name": "聯電",
+    "industry": "晶圓代工",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2603": {
+    "name": "長榮",
+    "industry": "航運業",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2882": {
+    "name": "國泰金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "5880": {
+    "name": "合庫金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3037": {
+    "name": "欣興",
+    "industry": "ABF載板",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1216": {
+    "name": "統一",
+    "industry": "食品與零售通路",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2891": {
+    "name": "中信金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3045": {
+    "name": "台灣大",
+    "industry": "電信通訊",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "1303": {
+    "name": "南亞",
+    "industry": "塑化與橡膠",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2368": {
+    "name": "金像電",
+    "industry": "PCB (硬板/軟板)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2345": {
+    "name": "智邦",
+    "industry": "網通",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3665": {
+    "name": "貿聯-KY",
+    "industry": "光通訊",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2382": {
+    "name": "廣達",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "4904": {
+    "name": "遠傳",
+    "industry": "電信通訊",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2408": {
+    "name": "南亞科",
+    "industry": "記憶體與模組",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3481": {
+    "name": "群創",
+    "industry": "面板",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "7769": {
+    "name": "鴻勁",
+    "industry": "半導體設備",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2379": {
+    "name": "瑞昱",
+    "industry": "IC設計",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2412": {
+    "name": "中華電",
+    "industry": "電信通訊",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "1301": {
+    "name": "台塑",
+    "industry": "塑化與橡膠",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2327": {
+    "name": "國巨",
+    "industry": "被動元件",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1326": {
+    "name": "台化",
+    "industry": "塑化與橡膠",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "6669": {
+    "name": "緯穎",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3189": {
+    "name": "景碩",
+    "industry": "ABF載板",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3017": {
+    "name": "奇鋐",
+    "industry": "散熱",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3034": {
+    "name": "聯詠",
+    "industry": "IC設計",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2885": {
+    "name": "元大金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2207": {
+    "name": "和泰車",
+    "industry": "汽車與機械零件",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2887": {
+    "name": "台新新光金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2002": {
+    "name": "中鋼",
+    "industry": "鋼鐵金屬",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2360": {
+    "name": "致茂",
+    "industry": "半導體設備",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2801": {
+    "name": "彰銀",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2886": {
+    "name": "兆豐金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2449": {
+    "name": "京元電子",
+    "industry": "封測",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2059": {
+    "name": "川湖",
+    "industry": "滑軌",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1590": {
+    "name": "亞德客-KY",
+    "industry": "汽車與機械零件",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "6505": {
+    "name": "台塑化",
+    "industry": "塑化與橡膠",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3661": {
+    "name": "世芯-KY",
+    "industry": "矽智財 (IP)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2884": {
+    "name": "玉山金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "6770": {
+    "name": "力積電",
+    "industry": "晶圓代工",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2880": {
+    "name": "華南金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3036": {
+    "name": "文曄",
+    "industry": "電子通路",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2357": {
+    "name": "華碩",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2615": {
+    "name": "萬海",
+    "industry": "航運業",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2890": {
+    "name": "永豐金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2618": {
+    "name": "長榮航",
+    "industry": "航運業",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "8046": {
+    "name": "南電",
+    "industry": "ABF載板",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2912": {
+    "name": "統一超",
+    "industry": "食品與零售通路",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2344": {
+    "name": "華邦電",
+    "industry": "記憶體與模組",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "4938": {
+    "name": "和碩",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3231": {
+    "name": "緯創",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2376": {
+    "name": "技嘉",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2892": {
+    "name": "第一金",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "5876": {
+    "name": "上海商銀",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3008": {
+    "name": "大立光",
+    "industry": "光學鏡頭與感測",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1519": {
+    "name": "華城",
+    "industry": "重電與線纜",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2356": {
+    "name": "英業達",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "6415": {
+    "name": "矽力-KY",
+    "industry": "電源管理",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2404": {
+    "name": "漢唐",
+    "industry": "廠務工程",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "6919": {
+    "name": "康霈",
+    "industry": "生技醫療",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "6515": {
+    "name": "穎崴",
+    "industry": "探針卡與測試介面",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2324": {
+    "name": "仁寶",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "3533": {
+    "name": "嘉澤",
+    "industry": "連接器與零組件",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2347": {
+    "name": "聯強",
+    "industry": "電子通路",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2313": {
+    "name": "華通",
+    "industry": "PCB (硬板/軟板)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1504": {
+    "name": "東元",
+    "industry": "重電與線纜",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2337": {
+    "name": "旺宏",
+    "industry": "記憶體與模組",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "7750": {
+    "name": "新代",
+    "industry": "機器人",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "5871": {
+    "name": "中租-KY",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "1402": {
+    "name": "遠東新",
+    "industry": "紡織纖維",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3044": {
+    "name": "健鼎",
+    "industry": "PCB (硬板/軟板)",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1605": {
+    "name": "華新",
+    "industry": "重電與線纜",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "3702": {
+    "name": "大聯大",
+    "industry": "電子通路",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2610": {
+    "name": "華航",
+    "industry": "航運業",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "1101": {
+    "name": "台泥",
+    "industry": "水泥",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "6789": {
+    "name": "采鈺",
+    "industry": "光學鏡頭與感測",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2409": {
+    "name": "友達",
+    "industry": "面板",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "1802": {
+    "name": "台玻",
+    "industry": "玻布",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "6239": {
+    "name": "力成",
+    "industry": "封測",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "8210": {
+    "name": "勤誠",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2609": {
+    "name": "陽明",
+    "industry": "航運業",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2451": {
+    "name": "創見",
+    "industry": "記憶體與模組",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2834": {
+    "name": "臺企銀",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "2812": {
+    "name": "台中銀",
+    "industry": "金融",
+    "exchange": "twse",
+    "momentum": false
+  },
+  "6139": {
+    "name": "亞翔",
+    "industry": "廠務工程",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "2377": {
+    "name": "微星",
+    "industry": "伺服器與代工組裝",
+    "exchange": "twse",
+    "momentum": true
+  },
+  "5274": {
+    "name": "信驊",
+    "industry": "IC設計",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3491": {
+    "name": "昇達科",
+    "industry": "低軌衛星",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6223": {
+    "name": "旺矽",
+    "industry": "探針卡與測試介面",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6121": {
+    "name": "新普",
+    "industry": "BBU (備用電池系統)",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6488": {
+    "name": "環球晶",
+    "industry": "矽晶圓",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6548": {
+    "name": "長科",
+    "industry": "導線架",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "8299": {
+    "name": "群聯",
+    "industry": "記憶體與模組",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "1785": {
+    "name": "光洋科",
+    "industry": "半導體材料與化學",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6274": {
+    "name": "台燿",
+    "industry": "CCL (銅箔基板)",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3363": {
+    "name": "上詮",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "5347": {
+    "name": "世界",
+    "industry": "晶圓代工",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "7828": {
+    "name": "創新服務",
+    "industry": "探針卡與測試介面",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3293": {
+    "name": "鈊象",
+    "industry": "軟體與遊戲",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4979": {
+    "name": "華星光",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "8069": {
+    "name": "元太",
+    "industry": "電子紙",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6182": {
+    "name": "合晶",
+    "industry": "矽晶圓",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3529": {
+    "name": "力旺",
+    "industry": "矽智財 (IP)",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3163": {
+    "name": "波若威",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3081": {
+    "name": "聯亞",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3211": {
+    "name": "順達",
+    "industry": "BBU (備用電池系統)",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3260": {
+    "name": "威剛",
+    "industry": "記憶體與模組",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4966": {
+    "name": "譜瑞-KY",
+    "industry": "IC設計",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3105": {
+    "name": "穩懋",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4991": {
+    "name": "環宇-KY",
+    "industry": "光通訊",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "5289": {
+    "name": "宜鼎",
+    "industry": "記憶體與模組",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "5903": {
+    "name": "全家",
+    "industry": "食品與零售通路",
+    "exchange": "tpex",
+    "momentum": false
+  },
+  "5536": {
+    "name": "聖暉",
+    "industry": "廠務工程",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "1815": {
+    "name": "富喬",
+    "industry": "玻璃布",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "5483": {
+    "name": "中美晶",
+    "industry": "矽晶圓",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3680": {
+    "name": "家登",
+    "industry": "半導體設備",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6147": {
+    "name": "頎邦",
+    "industry": "封測",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "8415": {
+    "name": "大國鋼",
+    "industry": "鋼鐵金屬",
+    "exchange": "tpex",
+    "momentum": false
+  },
+  "7734": {
+    "name": "印能科技",
+    "industry": "半導體材料與化學",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6290": {
+    "name": "良維",
+    "industry": "連接器與零組件",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6187": {
+    "name": "萬潤",
+    "industry": "半導體設備",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "7751": {
+    "name": "竑騰",
+    "industry": "連接器與零組件",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3264": {
+    "name": "欣銓",
+    "industry": "封測",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6023": {
+    "name": "元大期",
+    "industry": "金融",
+    "exchange": "tpex",
+    "momentum": false
+  },
+  "3324": {
+    "name": "雙鴻",
+    "industry": "散熱",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4772": {
+    "name": "台特化",
+    "industry": "半導體材料與化學",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6510": {
+    "name": "精測",
+    "industry": "探針卡與測試介面",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "8932": {
+    "name": "智通",
+    "industry": "紡織纖維",
+    "exchange": "tpex",
+    "momentum": false
+  },
+  "8358": {
+    "name": "金居",
+    "industry": "CCL (銅箔基板)",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "6584": {
+    "name": "南俊國際",
+    "industry": "滑軌",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3374": {
+    "name": "精材",
+    "industry": "封測",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3227": {
+    "name": "原相",
+    "industry": "IC設計",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3131": {
+    "name": "弘塑",
+    "industry": "半導體設備",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4123": {
+    "name": "晟德",
+    "industry": "生技醫療",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "4749": {
+    "name": "新應材",
+    "industry": "半導體材料與化學",
+    "exchange": "tpex",
+    "momentum": true
+  },
+  "3718": {
+    "name": "中光電投控",
+    "industry": "機器人",
+    "exchange": "tpex",
+    "momentum": true
+  }
+}

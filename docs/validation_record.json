@@ -1,0 +1,14 @@
+{
+  "checked_on_utc": "2026-10-25",
+  "tests_passed": 29,
+  "demo_holdings": 26,
+  "demo_orders": 26,
+  "estimated_cash_pct": 0.16093465249388336,
+  "live_submission_tested": false,
+  "windows_scheduler_tested": false,
+  "gemini_authenticated_tested": false,
+  "paid_etf_data_tested": false,
+  "calendar_auto_skip_observed": true,
+  "stale_official_quote_block_observed": "Expected2026-10-23, received2026-10-22; rejected",
+  "code_version": "sha256:7d3aba11db4b863d6b63fc50109dbd200258e79f"
+}

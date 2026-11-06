@@ -1,0 +1,472 @@
+{
+  "schema_version": "4.0",
+  "doc_type": "D-Plan",
+  "team_id": "TEAM_11718",
+  "trade_date": "2026-11-06",
+  "sources": [
+    {
+      "source_id": "S1",
+      "authority": "twse",
+      "name": "TWSE 盤後資訊：上市個股日收盤價量與三大法人買賣超（2026-11-05）",
+      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX",
+      "content_as_of": "2026-11-05T18:30:00+08:00",
+      "fetched_at": "2026-11-06T00:10:48+08:00"
+    },
+    {
+      "source_id": "S2",
+      "authority": "tpex",
+      "name": "TPEx 盤後資訊：上櫃股票每日收盤行情與三大法人買賣超（2026-11-05）",
+      "url": "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes",
+      "content_as_of": "2026-11-05T18:30:00+08:00",
+      "fetched_at": "2026-11-06T00:10:49+08:00"
+    },
+    {
+      "source_id": "S3",
+      "authority": "twse",
+      "name": "TWSE 發行量加權股價指數歷史資料（TAIEX）",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST",
+      "content_as_of": "2026-11-05T18:30:00+08:00",
+      "fetched_at": "2026-11-06T00:10:34+08:00"
+    },
+    {
+      "source_id": "S4",
+      "authority": "vendor",
+      "name": "Yahoo Finance 台股技術指標、個股市值與美股指數／ADR 行情",
+      "url": "https://finance.yahoo.com",
+      "content_as_of": "2026-11-06T00:12:30+08:00",
+      "fetched_at": "2026-11-06T00:12:37+08:00"
+    },
+    {
+      "source_id": "S5",
+      "authority": "media",
+      "name": "鉅亨網：美股盤中／AI投資疑慮引爆科技股賣壓那指跌逾3%、費半重挫7.1%",
+      "url": "https://news.cnyes.com/news/id/6649135",
+      "published_at": "2026-11-05T23:30:23+08:00",
+      "content_as_of": "2026-11-05T23:30:23+08:00",
+      "fetched_at": "2026-11-06T00:12:47+08:00"
+    },
+    {
+      "source_id": "S6",
+      "authority": "media",
+      "name": "鉅亨網：選後行情變臉！那指盤中跌入修正區間 台積電ADR挫近7.6%",
+      "url": "https://news.cnyes.com/news/id/6649126",
+      "published_at": "2026-11-05T23:28:18+08:00",
+      "content_as_of": "2026-11-05T23:28:18+08:00",
+      "fetched_at": "2026-11-06T00:12:47+08:00"
+    },
+    {
+      "source_id": "S7",
+      "authority": "media",
+      "name": "Yahoo新聞：台股急殺1374點！融資一口氣大減274億 小犬示警：追繳令恐萬箭齊發",
+      "url": "https://news.google.com/rss/articles/CBMiggNBVV95cUxOekVldnlYa1hwVEQ0bUYwYWJxNG4zZWRGSEFWcTFGS01Nd3RBa0FWSEhjeDA5TFFPR3VHX3ZCTTZEcGI3R2xzU1BWMU5IMGIzVWdqUUJTVGlreGEzeTJ0ODlPbUFJSWotS2tJY19ta2p3cm5rLUtzUjFBVk1tY2FkM1RHSTNvRkRZWEhwaDJLMGo0OXR2b0w2VWxsUmZaWHNSdmZzcUVrRnZUVHo2ZzFZbUpfcnlycVlCajBBa3JFTnJSa2taTmJzN2dhN0FrektHYXZHWnhYVl95aGx2YTN0WVhwaFo4SF9hWl9CTzlzc0JUWFZaRlVvZXdIWm9sQmFldGhqdmlWREtJeHZBdERoTm84V2RudzM4WU5DT2FLYm5pSU5OZVpBYTBmemFhYUlfS0QxUVdwck4yU3p3dE1kMjl3MUtEMk1icVhEZFhhT2t3aFlfWktBWElWVzhjdnpQdzFuYndmckdCWG1lWWNyZThYZWpsYVhjbnVuNUZ3OTVrUQ",
+      "published_at": "2026-11-05T23:49:00+08:00",
+      "content_as_of": "2026-11-05T23:49:00+08:00",
+      "fetched_at": "2026-11-06T00:12:47+08:00"
+    },
+    {
+      "source_id": "S8",
+      "authority": "media",
+      "name": "經濟日報：美股早盤／「藍色海嘯」掀AI大逃殺潮 費半崩7%",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBIenNwMlZVeVNaSDM4elNveW5LaGJKa0FJaFhGTjdSWlhUUDY1N0kzZm9BNVJvOWdMUDJpdTh3Zy14OHZWY1VDMWp4RV9QVVFRUGFyZGNlbkU2R2ln",
+      "published_at": "2026-11-05T23:09:55+08:00",
+      "content_as_of": "2026-11-05T23:09:55+08:00",
+      "fetched_at": "2026-11-06T00:12:47+08:00"
+    }
+  ],
+  "observations": [
+    {
+      "obs_id": "O1",
+      "source_ref": [
+        "S1",
+        "S3",
+        "S7"
+      ],
+      "topic": "taiex_plunge_and_margin_reduction",
+      "statement": "加權指數 2026-11-05 終場重挫 1,374.19 點（-3.20%）收在 41,574.72 點，成交量能充沛，連續第 6 個交易日位於 60 日均線（46,490.63 點）與 20 日均線（46,640.00 點）下方；三大法人方面外資單日淨賣超 598,370 張、自營商同步調節，投信則逆勢擴大加碼買超 89,932 張（連 18 買）；單日市場融資餘額急劇減少 274 億元，顯示籌碼加速清洗，市場避險情緒濃厚",
+      "values": {
+        "TAIEX_close_1105": 41574.72,
+        "TAIEX_chg_pts_1105": -1374.19,
+        "TAIEX_chg_pct_1105": -3.2,
+        "MA_20_1105": 46640.0,
+        "MA_60_1105": 46490.63,
+        "consecutive_days_below_ma60": 6,
+        "foreign_net_lots_total": -598370,
+        "trust_net_lots_total": 89932,
+        "margin_balance_reduction_bn_twd": 274
+      }
+    },
+    {
+      "obs_id": "O2",
+      "source_ref": [
+        "S4",
+        "S5",
+        "S6",
+        "S8"
+      ],
+      "topic": "us_semiconductor_crash_and_vix_spike",
+      "statement": "美股週四（2026-11-05）受 AI 投資回報疑慮與監管政策擔憂衝擊，科技與半導體族群爆發全面性賣壓：費城半導體指數崩跌 9.77% 收 9,265.67 點、那斯達克 100 指數重挫 5.01% 收 27,012.44 點、標普 500 下跌 3.02% 收 7,456.51 點、道瓊跌 2.26% 收 52,149.93 點，VIX 恐慌指數暴漲 65.26% 竄升至 27.45；台積電 ADR 大跌 9.26% 收 359.12 美元、聯電 ADR 重挫 15.29% 收 13.60 美元，國際科技股系統性波動顯著加劇",
+      "values": {
+        "SOX_close": 9265.67,
+        "SOX_chg_pct": -9.77,
+        "NDX_close": 27012.44,
+        "NDX_chg_pct": -5.01,
+        "SPX_close": 7456.51,
+        "SPX_chg_pct": -3.02,
+        "DJI_close": 52149.93,
+        "DJI_chg_pct": -2.26,
+        "TSM_ADR_close": 359.12,
+        "TSM_ADR_chg_pct": -9.26,
+        "UMC_ADR_close": 13.6,
+        "UMC_ADR_chg_pct": -15.29,
+        "VIX_level": 27.45,
+        "VIX_chg_pct": 65.26
+      }
+    },
+    {
+      "obs_id": "O3",
+      "source_ref": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "topic": "portfolio_ledger_at_1105_close",
+      "statement": "依證交所與櫃買中心官方收盤行情精確結算，截至 2026-11-05 收盤組合總淨值（NAV）為 905,280,957.23 元，現金部位 100,217,257.23 元（佔 NAV 11.07%），股票市值 805,063,700.00 元（佔 NAV 88.93%，共 26 檔）；其中台積電（2330）收 2,240.00 元，現持 83,000 股佔 NAV 20.54%（未達規則二 25% 上限）；五大金控富邦金（4.33%）、國泰金（4.35%）、中信金（4.42%）、台新新光金（4.21%）、元大金（4.21%）合計佔 21.52%；現有 20 檔動能持股個別佔比介於 2.09% 至 2.59%",
+      "values": {
+        "nav_twd": 905280957.23,
+        "cash_twd": 100217257.23,
+        "cash_pct": 11.07,
+        "tsmc_close": 2240.0,
+        "tsmc_shares": 83000,
+        "tsmc_weight_pct": 20.54,
+        "fin_total_weight_pct": 21.52,
+        "mom20_min_weight_pct": 2.09,
+        "mom20_max_weight_pct": 2.59
+      }
+    },
+    {
+      "obs_id": "O4",
+      "source_ref": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "topic": "momentum_screening_and_rule1_trigger",
+      "statement": "動能候選池共 110 檔（前 40% 門檻為第 44 名內）：審查現有 20 檔動能持股，穩懋（3105）於 11/04 名列第 59 名、11/05 名列第 60 名，已連續兩日掉出前 40%（必要條件成立），且自建倉以來累積跌幅達 -17.11%（已超越 >10% 停損門檻），確切觸發動能策略規則一淘汰機制；其餘 19 檔動能持股連續兩日落於第 44 名外者為 0 檔；11/05 動能候選池中尚未持有之第一名標的為晟德（4123，生技醫療，得分 +2，收盤價 28.90 元，投信連續買超），次高為藥華藥（6446，得分 0）",
+      "values": {
+        "universe_momentum_count": 110,
+        "top40_rank_cutoff": 44,
+        "stock_3105_rank_1104": 59,
+        "stock_3105_rank_1105": 60,
+        "stock_3105_cum_loss_pct": -17.11,
+        "rule1_triggered_count": 1,
+        "replacement_ticker_code": 4123,
+        "replacement_score": 2,
+        "replacement_close": 28.9
+      }
+    }
+  ],
+  "market_view": {
+    "basis_refs": [
+      "O1",
+      "O2",
+      "O3",
+      "O4"
+    ],
+    "logic": "台股 2026-11-05 重挫 1,374.19 點（-3.20%）收 41,574.72 點，加權指數已連續第 6 個交易日位於季線（46,490.63 點）與月線下方，空方結構未扭轉；且隔夜美股因市場對 AI 算力回報與科技監管擔憂重燃，費半崩跌 9.77%、那指大跌 5.01%、台積電 ADR 重跌 9.26%、VIX 衝至 27.45，顯示國際高估值科技股遭遇強烈去槓桿賣壓，總體環境屬震盪偏空之防禦格局（regime=neutral，stance=defensive）。依據最新版動能策略（動能策略 (3).pdf）逐項執行審查：（1）規則一審查：現有持股穩懋（3105）於 11/04（第 59 名）與 11/05（第 60 名）連續兩天排名掉出前 40%（第 44 名外），且建倉以來累積跌幅達 -17.11%（跌破 -10% 停損門檻），確切觸發規則一換股機制，必須全數出清 42,000 股並替換為當日動能第一名未持有之標的；11/05 篩選出未持有之最高分標的為生技醫療族群之晟德（4123，得分 +2，收盤價 28.90 元），依規則三之(3)單檔 2.50%（約 2,263 萬元）建倉買進 783,000 股；（2）規則二台積電現有持股佔 NAV 20.54%，未達 25% 減碼上限，維持續抱；（3）大盤維持季線下配置，其餘五大金控（合計 21.52%）與 19 檔動能股（個別權重介於 2.23%~2.59%）均貼合目標規範，依規全數續抱；換股後整體曝險維持約 89.3%，預估現金佔比約 10.66% 符合目標區間 [0.08, 0.14]，維持既有部位曝險（net_exposure_intent=hold）。",
+    "regime": "neutral",
+    "stance": "defensive",
+    "posture": {
+      "net_exposure_intent": "hold",
+      "target_cash_pct_range": [
+        0.08,
+        0.14
+      ]
+    },
+    "counter_evidence": "費半指數與台積電 ADR 隔夜單日重挫近一成，開盤加權指數恐面臨大幅跳空開低壓力，且融資斷頭追繳令頻發；惟本組合已保有 11.07% 現金及 21.52% 金控防禦部位，且此次出清弱勢穩懋、引進逆勢抗跌且獲投信加碼之生技股晟德，具備顯著防禦換血效益",
+    "confidence": 0.9
+  },
+  "inferences": [
+    {
+      "inf_id": "I1",
+      "premise_refs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "logic": "依策略規則二（台積電權重大於 25% 時減碼至 20%），台積電（2330）於 11/05 收 2,240.00 元，現持 83,000 股佔 NAV 20.54%，未超過 25% 門檻；雖美股 ADR 隔夜回檔，但考量台積電為投組基石且權重符合規範，維持續抱不異動",
+      "conclusion": "台積電（2330）權重 20.54% 未逾 25% 減碼門檻，續抱 83,000 股不交易",
+      "counter_evidence": null,
+      "confidence": 0.92
+    },
+    {
+      "inf_id": "I2",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "依策略規則三之(3)季線下配置規範，五大市值金控（富邦金、國泰金、中信金、台新新光金、元大金）合計佔 NAV 21.52%，單檔佔比介於 4.21%~4.42%，在高波動與融資清理環境中具備優異之防禦緩衝與高股息支持，維持原部位續抱",
+      "conclusion": "五大金控合計權重 21.52% 發揮資金防禦功能，全數續抱不異動",
+      "counter_evidence": null,
+      "confidence": 0.92
+    },
+    {
+      "inf_id": "I3",
+      "premise_refs": [
+        "O1",
+        "O4"
+      ],
+      "logic": "依動能策略規則一，持股過去連續兩天每日排名掉出前 40%（第 44 名外）且累積跌幅大於 10% 觸發停損換股。穩懋（3105）11/04 排名第 59 名、11/05 排名第 60 名，累積跌幅達 -17.11%，確切符合兩項觸發條件，應全數出清 42,000 股以落實紀律並釋出資金",
+      "conclusion": "穩懋（3105）同時滿足連兩日排名掉出前 40% 與累積虧損逾 10% 條件，全數賣出 42,000 股（SELL_ALL）",
+      "counter_evidence": null,
+      "confidence": 0.94
+    },
+    {
+      "inf_id": "I4",
+      "premise_refs": [
+        "O1",
+        "O4"
+      ],
+      "logic": "依動能策略規則一，出清 N 檔標的後應換成當日動能排名由高到低且無重複之前 N 檔（N=1）；11/05 候選池中第一名未持有之標的為生技醫療類股之晟德（4123，得分 +2，收盤價 28.90 元，投信連續買超）；依規則三之(3)單檔配置 2.50%（約 2,263 萬元），換算整千股為買進 783,000 股（佔 NAV 2.50%）",
+      "conclusion": "買進動能第一名新標的晟德（4123）783,000 股（BUY），權重達成 2.50%",
+      "counter_evidence": null,
+      "confidence": 0.93
+    },
+    {
+      "inf_id": "I5",
+      "premise_refs": [
+        "O1",
+        "O3",
+        "O4"
+      ],
+      "logic": "檢核其餘 19 檔動能持股（元太、南亞、臻鼎-KY、矽力-KY、微星、富喬、南電、台化、和碩、鴻海、雙鴻、欣興、健策、聯發科、台塑化、群創、日月光投控、奇鋐、華碩）：無任何持股同時滿足連續兩天掉出前 40% 且漲跌逾門檻之條件，且各檔權重介於 2.23%~2.59% 符合 2.5% ± 0.3% 規範，全數續抱不異動",
+      "conclusion": "其餘 19 檔動能持股均未達淘汰條件，全數維持續抱",
+      "counter_evidence": "部分個股（如南電、台塑化、群創）於 11/05 單日排名滑落，後續將密切追蹤明日表現",
+      "confidence": 0.91
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D1",
+      "ticker": "3105",
+      "action": "SELL_ALL",
+      "target_weight": 0.0,
+      "inference_refs": [
+        "I3"
+      ],
+      "risk_check": "出清 42,000 股以落實動能策略規則一停損紀律，防範砷化鎵功率放大器族群續跌風險"
+    },
+    {
+      "decision_id": "D2",
+      "ticker": "4123",
+      "action": "BUY",
+      "target_weight": 0.025,
+      "inference_refs": [
+        "I4"
+      ],
+      "risk_check": "新建倉 783,000 股以納入當日動能第一名標的，單檔權重 2.50% 符合上限規範"
+    }
+  ],
+  "no_trade_decisions": [
+    {
+      "ticker": "2330",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "半導體核心配置台積電（2330），現持 83,000 股（收 2,240.00 元，佔 NAV 20.54%），未逾規則二之 25% 減碼上限，續抱不異動"
+    },
+    {
+      "ticker": "2881",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "上市市值前五大金控核心配置 富邦金（2881），現持 252,000 股（收 155.50 元，佔 NAV 4.33%），屬大盤季線下 20% 防禦配置，提供流動性與抗震防護，續抱不異動"
+    },
+    {
+      "ticker": "2882",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "上市市值前五大金控核心配置 國泰金（2882），現持 352,000 股（收 112.00 元，佔 NAV 4.35%），屬大盤季線下 20% 防禦配置，提供流動性與抗震防護，續抱不異動"
+    },
+    {
+      "ticker": "2891",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "上市市值前五大金控核心配置 中信金（2891），現持 534,000 股（收 74.90 元，佔 NAV 4.42%），屬大盤季線下 20% 防禦配置，提供流動性與抗震防護，續抱不異動"
+    },
+    {
+      "ticker": "2887",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "上市市值前五大金控核心配置 台新新光金（2887），現持 950,000 股（收 40.10 元，佔 NAV 4.21%），屬大盤季線下 20% 防禦配置，提供流動性與抗震防護，續抱不異動"
+    },
+    {
+      "ticker": "2885",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "上市市值前五大金控核心配置 元大金（2885），現持 552,000 股（收 69.10 元，佔 NAV 4.21%），屬大盤季線下 20% 防禦配置，提供流動性與抗震防護，續抱不異動"
+    },
+    {
+      "ticker": "8069",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 元太（8069）於 11/05 排名第 4 名居前 40% 內未觸發規則一，現持 160,000 股佔 NAV 2.49%，續抱不異動"
+    },
+    {
+      "ticker": "1303",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 南亞（1303）於 11/05 排名第 9 名居前 40% 內未觸發規則一，現持 81,000 股佔 NAV 2.23%，續抱不異動"
+    },
+    {
+      "ticker": "4958",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 臻鼎-KY（4958）於 11/05 排名第 30 名居前 40% 內未觸發規則一，現持 52,000 股佔 NAV 2.26%，續抱不異動"
+    },
+    {
+      "ticker": "6415",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 矽力-KY（6415）於 11/04 居第 25 名（前 40% 內）、11/05 第 61 名（僅單日落於第 44 名外）未達連續兩日條件，現持 49,000 股佔 NAV 2.23%，續抱不異動"
+    },
+    {
+      "ticker": "2377",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 微星（2377）於 11/05 排名第 41 名居前 40% 內未觸發規則一，現持 156,000 股佔 NAV 2.46%，續抱不異動"
+    },
+    {
+      "ticker": "1815",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 富喬（1815）於 11/05 排名第 18 名居前 40% 內未觸發規則一，現持 176,000 股佔 NAV 2.36%，續抱不異動"
+    },
+    {
+      "ticker": "8046",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 南電（8046）於 11/04 居第 11 名（前 40% 內）、11/05 第 90 名（僅單日落於第 44 名外）未達連續兩日條件，現持 21,000 股佔 NAV 2.25%，續抱不異動"
+    },
+    {
+      "ticker": "1326",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 台化（1326）於 11/04 居第 8 名（前 40% 內）、11/05 第 54 名（僅單日落於第 44 名外）未達連續兩日條件，現持 332,000 股佔 NAV 2.38%，續抱不異動"
+    },
+    {
+      "ticker": "4938",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 和碩（4938）於 11/05 排名第 22 名居前 40% 內未觸發規則一，現持 238,000 股佔 NAV 2.56%，續抱不異動"
+    },
+    {
+      "ticker": "2317",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 鴻海（2317）於 11/05 排名第 24 名居前 40% 內未觸發規則一，現持 97,000 股佔 NAV 2.52%，續抱不異動"
+    },
+    {
+      "ticker": "3324",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 雙鴻（3324）於 11/05 排名第 5 名居前 40% 內未觸發規則一，現持 18,000 股佔 NAV 2.33%，續抱不異動"
+    },
+    {
+      "ticker": "3037",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 欣興（3037）於 11/04 居第 35 名（前 40% 內）、11/05 第 64 名（僅單日落於第 44 名外）未達連續兩日條件，現持 24,000 股佔 NAV 2.12%，續抱不異動"
+    },
+    {
+      "ticker": "3653",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 健策（3653）於 11/05 排名第 27 名居前 40% 內未觸發規則一，現持 4,000 股佔 NAV 2.56%，續抱不異動"
+    },
+    {
+      "ticker": "2454",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 聯發科（2454）於 11/05 排名第 23 名居前 40% 內未觸發規則一，現持 6,000 股佔 NAV 2.29%，續抱不異動"
+    },
+    {
+      "ticker": "6505",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 台塑化（6505）於 11/04 居第 16 名（前 40% 內）、11/05 第 108 名（僅單日落於第 44 名外）未達連續兩日條件，現持 237,000 股佔 NAV 2.30%，續抱不異動"
+    },
+    {
+      "ticker": "3481",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 群創（3481）於 11/04 居第 36 名（前 40% 內）、11/05 第 91 名（僅單日落於第 44 名外）未達連續兩日條件，現持 548,000 股佔 NAV 2.30%，續抱不異動"
+    },
+    {
+      "ticker": "3711",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 日月光投控（3711）於 11/05 排名第 25 名居前 40% 內未觸發規則一，現持 36,000 股佔 NAV 2.27%，續抱不異動"
+    },
+    {
+      "ticker": "3017",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 奇鋐（3017）於 11/05 排名第 26 名居前 40% 內未觸發規則一，現持 8,000 股佔 NAV 2.27%，續抱不異動"
+    },
+    {
+      "ticker": "2357",
+      "reason_refs": [
+        "I5"
+      ],
+      "reason": "動能持股 華碩（2357）於 11/05 排名第 2 名居前 40% 內未觸發規則一，現持 27,000 股佔 NAV 2.59%，續抱不異動"
+    }
+  ],
+  "orders": [
+    {
+      "ticker": "3105",
+      "side": "SELL",
+      "shares": 42000,
+      "decision_ref": "D1",
+      "derivation_detail": "全數出清 42,000 股（42 張），預計收回約 1,894 萬元資金"
+    },
+    {
+      "ticker": "4123",
+      "side": "BUY",
+      "shares": 783000,
+      "decision_ref": "D2",
+      "derivation_detail": "目標權重 2.50% 對應 22,632,024 元，以收盤價 28.90 元整張取 783,000 股（佔 NAV 2.50%）"
+    }
+  ],
+  "agent_metadata": {
+    "model_provider": "google",
+    "model_version": "gemini-4-argon",
+    "run_started_at": "2026-11-06T00:10:15+08:00",
+    "run_completed_at": "2026-11-06T00:15:48+08:00",
+    "input_tokens": 25800,
+    "output_tokens": 6800,
+    "tool_use_count": 10,
+    "code_version": "git:main"
+  }
+}

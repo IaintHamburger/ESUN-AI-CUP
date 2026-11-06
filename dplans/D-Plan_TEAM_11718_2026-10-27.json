@@ -1,0 +1,834 @@
+{
+  "schema_version": "4.0",
+  "doc_type": "D-Plan",
+  "team_id": "TEAM_11718",
+  "trade_date": "2026-10-27",
+  "sources": [
+    {
+      "source_id": "S1",
+      "authority": "twse",
+      "name": "TWSE 盤後資訊：上市個股日收盤價量 + 三大法人買賣超",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+      "content_as_of": "2026-10-23T18:30:00+08:00",
+      "fetched_at": "2026-10-26T23:20:00+08:00"
+    },
+    {
+      "source_id": "S2",
+      "authority": "twse",
+      "name": "加權指數歷史數據（TAIEX）",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST",
+      "content_as_of": "2026-10-23T18:30:00+08:00",
+      "fetched_at": "2026-10-26T23:20:00+08:00"
+    },
+    {
+      "source_id": "S3",
+      "authority": "vendor",
+      "name": "Yahoo Finance 歷史價量與技術指標時序庫",
+      "url": "https://finance.yahoo.com",
+      "content_as_of": "2026-10-23T18:00:00+08:00",
+      "fetched_at": "2026-10-26T23:20:00+08:00"
+    }
+  ],
+  "observations": [
+    {
+      "obs_id": "O1",
+      "source_ref": [
+        "S2"
+      ],
+      "topic": "tw_market",
+      "statement": "加權指數收 46,041.4 點，位於 60 日均線（46,207.1）下方，近期市場呈現區間震盪整理",
+      "values": {
+        "TAIEX_close": 46041.4,
+        "MA_20": 48071.6,
+        "MA_60": 46207.1
+      }
+    },
+    {
+      "obs_id": "O2",
+      "source_ref": [
+        "S1",
+        "S3"
+      ],
+      "topic": "financial_market_caps",
+      "statement": "台股市值前五大上市金控為富邦金 (2881)、國泰金 (2882)、中信金 (2891)、台新新光金 (2887)、元大金 (2885)",
+      "values": {
+        "top_financial_count": 5,
+        "fubon_market_cap_twd_b": 2166.0,
+        "cathay_market_cap_twd_b": 1665.0
+      }
+    },
+    {
+      "obs_id": "O3",
+      "source_ref": [
+        "S3"
+      ],
+      "topic": "momentum_scoring",
+      "statement": "依動能策略（EMA/MA趨勢、成交量爆量、RSI10、均線金叉突破、三大法人籌碼比）計算，景碩、文曄、台玻、元太等 20 檔標的評分領先",
+      "values": {
+        "top_momentum_count": 20
+      }
+    }
+  ],
+  "market_view": {
+    "basis_refs": [
+      "O1"
+    ],
+    "logic": "加權指數位於 60 日均線下方，符合首日建倉防禦兼具動能之標準架構：建立 20% 台積電底倉、20% 金融權值股穩定波動、45% 趨勢動能部位掌握個股Alpha，並保留 15% 以上高流動性現金緩衝",
+    "regime": "neutral",
+    "stance": "neutral",
+    "posture": {
+      "net_exposure_intent": "increase",
+      "target_cash_pct_range": [
+        0.15,
+        0.2
+      ]
+    },
+    "counter_evidence": "指數短期回檔，但動能個股強者恆強，以多因子篩選及嚴格停損控制下行風險",
+    "confidence": 0.75
+  },
+  "inferences": [
+    {
+      "inf_id": "I1",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "台積電 (2330): 核心半導體配置 20%（符合台積電 <= 25% 限制）",
+      "conclusion": "建倉 2330，目標配置比例 20.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I2",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "富邦金 (2881): 金融核心部位（市值第 1 大金控）配置 4%",
+      "conclusion": "建倉 2881，目標配置比例 4.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I3",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "國泰金 (2882): 金融核心部位（市值第 2 大金控）配置 4%",
+      "conclusion": "建倉 2882，目標配置比例 4.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I4",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "中信金 (2891): 金融核心部位（市值第 3 大金控）配置 4%",
+      "conclusion": "建倉 2891，目標配置比例 4.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I5",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "台新新光金 (2887): 金融核心部位（市值第 4 大金控）配置 4%",
+      "conclusion": "建倉 2887，目標配置比例 4.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I6",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "元大金 (2885): 金融核心部位（市值第 5 大金控）配置 4%",
+      "conclusion": "建倉 2885，目標配置比例 4.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I7",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "景碩 (3189): 動能評分第 1 名（得分 8）配置 3%",
+      "conclusion": "建倉 3189，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I8",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "文曄 (3036): 動能評分第 2 名（得分 8）配置 3%",
+      "conclusion": "建倉 3036，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I9",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "台玻 (1802): 動能評分第 3 名（得分 8）配置 3%",
+      "conclusion": "建倉 1802，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I10",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "元太 (8069): 動能評分第 4 名（得分 6）配置 3%",
+      "conclusion": "建倉 8069，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I11",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "南亞 (1303): 動能評分第 5 名（得分 5）配置 3%",
+      "conclusion": "建倉 1303，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I12",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "緯創 (3231): 動能評分第 6 名（得分 5）配置 3%",
+      "conclusion": "建倉 3231，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I13",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "臻鼎-KY (4958): 動能評分第 7 名（得分 5）配置 3%",
+      "conclusion": "建倉 4958，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I14",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "瑞昱 (2379): 動能評分第 8 名（得分 5）配置 3%",
+      "conclusion": "建倉 2379，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I15",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "聯詠 (3034): 動能評分第 9 名（得分 5）配置 3%",
+      "conclusion": "建倉 3034，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I16",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "鈊象 (3293): 動能評分第 10 名（得分 5）配置 3%",
+      "conclusion": "建倉 3293，目標配置比例 3.0%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I17",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "矽力-KY (6415): 動能評分第 11 名（得分 5）配置 1.5%",
+      "conclusion": "建倉 6415，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I18",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "聯強 (2347): 動能評分第 12 名（得分 5）配置 1.5%",
+      "conclusion": "建倉 2347，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I19",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "微星 (2377): 動能評分第 13 名（得分 5）配置 1.5%",
+      "conclusion": "建倉 2377，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I20",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "富喬 (1815): 動能評分第 14 名（得分 5）配置 1.5%",
+      "conclusion": "建倉 1815，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I21",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "台光電 (2383): 動能評分第 15 名（得分 4）配置 1.5%",
+      "conclusion": "建倉 2383，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I22",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "南電 (8046): 動能評分第 16 名（得分 4）配置 1.5%",
+      "conclusion": "建倉 8046，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I23",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "台化 (1326): 動能評分第 17 名（得分 4）配置 1.5%",
+      "conclusion": "建倉 1326，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I24",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "藥華藥 (6446): 動能評分第 18 名（得分 3）配置 1.5%",
+      "conclusion": "建倉 6446，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I25",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "和碩 (4938): 動能評分第 19 名（得分 3）配置 1.5%",
+      "conclusion": "建倉 4938，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    },
+    {
+      "inf_id": "I26",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "大聯大 (3702): 動能評分第 20 名（得分 3）配置 1.5%",
+      "conclusion": "建倉 3702，目標配置比例 1.5%",
+      "counter_evidence": null,
+      "confidence": 0.8
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D1",
+      "ticker": "2330",
+      "action": "BUY",
+      "target_weight": 0.2,
+      "inference_refs": [
+        "I1"
+      ],
+      "risk_check": "單檔權重 20.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D2",
+      "ticker": "2881",
+      "action": "BUY",
+      "target_weight": 0.04,
+      "inference_refs": [
+        "I2"
+      ],
+      "risk_check": "單檔權重 4.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D3",
+      "ticker": "2882",
+      "action": "BUY",
+      "target_weight": 0.04,
+      "inference_refs": [
+        "I3"
+      ],
+      "risk_check": "單檔權重 4.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D4",
+      "ticker": "2891",
+      "action": "BUY",
+      "target_weight": 0.04,
+      "inference_refs": [
+        "I4"
+      ],
+      "risk_check": "單檔權重 4.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D5",
+      "ticker": "2887",
+      "action": "BUY",
+      "target_weight": 0.04,
+      "inference_refs": [
+        "I5"
+      ],
+      "risk_check": "單檔權重 4.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D6",
+      "ticker": "2885",
+      "action": "BUY",
+      "target_weight": 0.04,
+      "inference_refs": [
+        "I6"
+      ],
+      "risk_check": "單檔權重 4.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D7",
+      "ticker": "3189",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I7"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D8",
+      "ticker": "3036",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I8"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D9",
+      "ticker": "1802",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I9"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D10",
+      "ticker": "8069",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I10"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D11",
+      "ticker": "1303",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I11"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D12",
+      "ticker": "3231",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I12"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D13",
+      "ticker": "4958",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I13"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D14",
+      "ticker": "2379",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I14"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D15",
+      "ticker": "3034",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I15"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D16",
+      "ticker": "3293",
+      "action": "BUY",
+      "target_weight": 0.03,
+      "inference_refs": [
+        "I16"
+      ],
+      "risk_check": "單檔權重 3.0% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D17",
+      "ticker": "6415",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I17"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D18",
+      "ticker": "2347",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I18"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D19",
+      "ticker": "2377",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I19"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D20",
+      "ticker": "1815",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I20"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D21",
+      "ticker": "2383",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I21"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D22",
+      "ticker": "8046",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I22"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D23",
+      "ticker": "1326",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I23"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D24",
+      "ticker": "6446",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I24"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D25",
+      "ticker": "4938",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I25"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    },
+    {
+      "decision_id": "D26",
+      "ticker": "3702",
+      "action": "BUY",
+      "target_weight": 0.015,
+      "inference_refs": [
+        "I26"
+      ],
+      "risk_check": "單檔權重 1.5% 符合個股上限規定"
+    }
+  ],
+  "no_trade_decisions": [],
+  "orders": [
+    {
+      "ticker": "2330",
+      "side": "BUY",
+      "shares": 83000,
+      "decision_ref": "D1",
+      "derivation_detail": "target_shares = floor(0.2 × 1,000,000,000 / 2385.0 / 1000) × 1000 = 83,000；現持 0 → BUY 83,000"
+    },
+    {
+      "ticker": "2881",
+      "side": "BUY",
+      "shares": 252000,
+      "decision_ref": "D2",
+      "derivation_detail": "target_shares = floor(0.04 × 1,000,000,000 / 158.5 / 1000) × 1000 = 252,000；現持 0 → BUY 252,000"
+    },
+    {
+      "ticker": "2882",
+      "side": "BUY",
+      "shares": 352000,
+      "decision_ref": "D3",
+      "derivation_detail": "target_shares = floor(0.04 × 1,000,000,000 / 113.5 / 1000) × 1000 = 352,000；現持 0 → BUY 352,000"
+    },
+    {
+      "ticker": "2891",
+      "side": "BUY",
+      "shares": 534000,
+      "decision_ref": "D4",
+      "derivation_detail": "target_shares = floor(0.04 × 1,000,000,000 / 74.9 / 1000) × 1000 = 534,000；現持 0 → BUY 534,000"
+    },
+    {
+      "ticker": "2887",
+      "side": "BUY",
+      "shares": 950000,
+      "decision_ref": "D5",
+      "derivation_detail": "target_shares = floor(0.04 × 1,000,000,000 / 42.1 / 1000) × 1000 = 950,000；現持 0 → BUY 950,000"
+    },
+    {
+      "ticker": "2885",
+      "side": "BUY",
+      "shares": 552000,
+      "decision_ref": "D6",
+      "derivation_detail": "target_shares = floor(0.04 × 1,000,000,000 / 72.4 / 1000) × 1000 = 552,000；現持 0 → BUY 552,000"
+    },
+    {
+      "ticker": "3189",
+      "side": "BUY",
+      "shares": 30000,
+      "decision_ref": "D7",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 986.0 / 1000) × 1000 = 30,000；現持 0 → BUY 30,000"
+    },
+    {
+      "ticker": "3036",
+      "side": "BUY",
+      "shares": 140000,
+      "decision_ref": "D8",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 213.0 / 1000) × 1000 = 140,000；現持 0 → BUY 140,000"
+    },
+    {
+      "ticker": "1802",
+      "side": "BUY",
+      "shares": 447000,
+      "decision_ref": "D9",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 67.1 / 1000) × 1000 = 447,000；現持 0 → BUY 447,000"
+    },
+    {
+      "ticker": "8069",
+      "side": "BUY",
+      "shares": 195000,
+      "decision_ref": "D10",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 153.5 / 1000) × 1000 = 195,000；現持 0 → BUY 195,000"
+    },
+    {
+      "ticker": "1303",
+      "side": "BUY",
+      "shares": 99000,
+      "decision_ref": "D11",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 301.0 / 1000) × 1000 = 99,000；現持 0 → BUY 99,000"
+    },
+    {
+      "ticker": "3231",
+      "side": "BUY",
+      "shares": 157000,
+      "decision_ref": "D12",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 190.0 / 1000) × 1000 = 157,000；現持 0 → BUY 157,000"
+    },
+    {
+      "ticker": "4958",
+      "side": "BUY",
+      "shares": 52000,
+      "decision_ref": "D13",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 567.0 / 1000) × 1000 = 52,000；現持 0 → BUY 52,000"
+    },
+    {
+      "ticker": "2379",
+      "side": "BUY",
+      "shares": 38000,
+      "decision_ref": "D14",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 772.0 / 1000) × 1000 = 38,000；現持 0 → BUY 38,000"
+    },
+    {
+      "ticker": "3034",
+      "side": "BUY",
+      "shares": 51000,
+      "decision_ref": "D15",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 583.0 / 1000) × 1000 = 51,000；現持 0 → BUY 51,000"
+    },
+    {
+      "ticker": "3293",
+      "side": "BUY",
+      "shares": 38000,
+      "decision_ref": "D16",
+      "derivation_detail": "target_shares = floor(0.03 × 1,000,000,000 / 787.0 / 1000) × 1000 = 38,000；現持 0 → BUY 38,000"
+    },
+    {
+      "ticker": "6415",
+      "side": "BUY",
+      "shares": 31000,
+      "decision_ref": "D17",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 472.0 / 1000) × 1000 = 31,000；現持 0 → BUY 31,000"
+    },
+    {
+      "ticker": "2347",
+      "side": "BUY",
+      "shares": 151000,
+      "decision_ref": "D18",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 99.3 / 1000) × 1000 = 151,000；現持 0 → BUY 151,000"
+    },
+    {
+      "ticker": "2377",
+      "side": "BUY",
+      "shares": 92000,
+      "decision_ref": "D19",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 163.0 / 1000) × 1000 = 92,000；現持 0 → BUY 92,000"
+    },
+    {
+      "ticker": "1815",
+      "side": "BUY",
+      "shares": 107000,
+      "decision_ref": "D20",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 139.0 / 1000) × 1000 = 107,000；現持 0 → BUY 107,000"
+    },
+    {
+      "ticker": "2383",
+      "side": "BUY",
+      "shares": 2000,
+      "decision_ref": "D21",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 5070.0 / 1000) × 1000 = 2,000；現持 0 → BUY 2,000"
+    },
+    {
+      "ticker": "8046",
+      "side": "BUY",
+      "shares": 11000,
+      "decision_ref": "D22",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 1265.0 / 1000) × 1000 = 11,000；現持 0 → BUY 11,000"
+    },
+    {
+      "ticker": "1326",
+      "side": "BUY",
+      "shares": 205000,
+      "decision_ref": "D23",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 73.0 / 1000) × 1000 = 205,000；現持 0 → BUY 205,000"
+    },
+    {
+      "ticker": "6446",
+      "side": "BUY",
+      "shares": 12000,
+      "decision_ref": "D24",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 1160.0 / 1000) × 1000 = 12,000；現持 0 → BUY 12,000"
+    },
+    {
+      "ticker": "4938",
+      "side": "BUY",
+      "shares": 144000,
+      "decision_ref": "D25",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 103.5 / 1000) × 1000 = 144,000；現持 0 → BUY 144,000"
+    },
+    {
+      "ticker": "3702",
+      "side": "BUY",
+      "shares": 131000,
+      "decision_ref": "D26",
+      "derivation_detail": "target_shares = floor(0.015 × 1,000,000,000 / 114.5 / 1000) × 1000 = 131,000；現持 0 → BUY 131,000"
+    }
+  ],
+  "agent_metadata": {
+    "model_provider": "google",
+    "model_version": "gemini-3.8-flash",
+    "run_started_at": "2026-10-26T23:20:00+08:00",
+    "run_completed_at": "2026-10-26T23:25:00+08:00",
+    "input_tokens": 12500,
+    "output_tokens": 4500,
+    "tool_use_count": 6,
+    "code_version": "git:feat/pr-1"
+  }
+}

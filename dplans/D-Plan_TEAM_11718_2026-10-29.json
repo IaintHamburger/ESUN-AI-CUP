@@ -1,0 +1,321 @@
+{
+  "schema_version": "4.0",
+  "doc_type": "D-Plan",
+  "team_id": "TEAM_11718",
+  "trade_date": "2026-10-29",
+  "sources": [
+    {
+      "source_id": "S1",
+      "authority": "twse",
+      "name": "TWSE 盤後資訊：上市個股日收盤價量 + 三大法人買賣超",
+      "url": "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL",
+      "content_as_of": "2026-10-28T18:30:00+08:00",
+      "fetched_at": "2026-10-28T21:55:00+08:00"
+    },
+    {
+      "source_id": "S2",
+      "authority": "twse",
+      "name": "加權指數歷史數據（TAIEX）",
+      "url": "https://www.twse.com.tw/rwd/zh/TAIEX/MI_5MINS_HIST",
+      "content_as_of": "2026-10-28T18:30:00+08:00",
+      "fetched_at": "2026-10-28T21:55:00+08:00"
+    },
+    {
+      "source_id": "S3",
+      "authority": "vendor",
+      "name": "Yahoo Finance 歷史價量與技術指標時序庫",
+      "url": "https://finance.yahoo.com",
+      "content_as_of": "2026-10-28T18:00:00+08:00",
+      "fetched_at": "2026-10-28T21:55:00+08:00"
+    }
+  ],
+  "observations": [
+    {
+      "obs_id": "O1",
+      "source_ref": [
+        "S2"
+      ],
+      "topic": "tw_market",
+      "statement": "加權指數強勢反彈收 47,035.6 點（+2.04%），強勢站回 60 日均線（46,207 點）上方，並持續挑戰 20 日均線",
+      "values": {
+        "TAIEX_close": 47035.6,
+        "TAIEX_chg_pct": 2.04,
+        "MA_20": 48071.6,
+        "MA_60": 46207.1
+      }
+    },
+    {
+      "obs_id": "O2",
+      "source_ref": [
+        "S1",
+        "S3"
+      ],
+      "topic": "tsmc_weight_check",
+      "statement": "台積電 (2330) 收盤 2,425 元（+1.04%），持股 83,000 股，佔總投資組合權重約 19.85%，未達到 >25% 減碼門檻",
+      "values": {
+        "tsmc_weight_pct": 19.85,
+        "tsmc_threshold_pct": 25.0
+      }
+    },
+    {
+      "obs_id": "O3",
+      "source_ref": [
+        "S1",
+        "S3"
+      ],
+      "topic": "momentum_holdings_monitoring",
+      "statement": "20 檔動能持股全面走揚，整體淨值穩健攀升至 10.14 億元；全體持股均未達到連續兩日跌出前 50% 且累積漲跌幅達 15% 之汰換標準",
+      "values": {
+        "triggered_exit_count": 0,
+        "portfolio_nav_twd_m": 1014.05
+      }
+    }
+  ],
+  "market_view": {
+    "basis_refs": [
+      "O1"
+    ],
+    "logic": "加權指數強勢突破 60 日均線反彈，多頭動能回升。大盤目前處於二十日線下、六十日線上區間，尚未連續三天站上二十日線，故維持目前穩健配置比例，不隨意盲目追高，耐心讓強勢持股獲利奔馳",
+    "regime": "neutral",
+    "stance": "neutral",
+    "posture": {
+      "net_exposure_intent": "hold",
+      "target_cash_pct_range": [
+        0.15,
+        0.2
+      ]
+    },
+    "counter_evidence": "外資買賣超呈現震盪輪動，短線大盤雖大漲但尚未確立長多排列，維持 15% 以上流動現金最為穩健",
+    "confidence": 0.8
+  },
+  "inferences": [
+    {
+      "inf_id": "I1",
+      "premise_refs": [
+        "O1",
+        "O2"
+      ],
+      "logic": "台積電 (2330) 權重 19.85% 緊扣 20% 目標，受惠半導體先進製程景氣強勁，維持核心配置續抱",
+      "conclusion": "台積電部位 83,000 股續抱",
+      "counter_evidence": null,
+      "confidence": 0.88
+    },
+    {
+      "inf_id": "I2",
+      "premise_refs": [
+        "O1"
+      ],
+      "logic": "富邦金、國泰金、中信金、元大金、台新新光金獲利動能與殖利率穩定，持續為基金提供低波動與防禦效果",
+      "conclusion": "五大核心金融股維持現有部位不變",
+      "counter_evidence": null,
+      "confidence": 0.85
+    },
+    {
+      "inf_id": "I3",
+      "premise_refs": [
+        "O1",
+        "O3"
+      ],
+      "logic": "20 檔動能持股中，南亞 (+5.98%)、景碩 (+4.97%)、和碩 (+4.35%)、矽力-KY (+11.23%) 表現搶眼，整體組合無標的觸發 15% 汰換門檻，維持原部位續抱",
+      "conclusion": "20 檔突破動能持股全數續抱，無須換股",
+      "counter_evidence": null,
+      "confidence": 0.84
+    }
+  ],
+  "decisions": [],
+  "no_trade_decisions": [
+    {
+      "ticker": "2330",
+      "reason_refs": [
+        "I1"
+      ],
+      "reason": "核心半導體配置（2330 台積電），權重 19.85% 未達 25% 減碼標準，維持續抱"
+    },
+    {
+      "ticker": "2881",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "金融核心部位（2881 富邦金），權重平衡防禦穩健，符合策略配置，維持續抱"
+    },
+    {
+      "ticker": "2882",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "金融核心部位（2882 國泰金），權重平衡防禦穩健，符合策略配置，維持續抱"
+    },
+    {
+      "ticker": "2891",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "金融核心部位（2891 中信金），權重平衡防禦穩健，符合策略配置，維持續抱"
+    },
+    {
+      "ticker": "2887",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "金融核心部位（2887 台新新光金），權重平衡防禦穩健，符合策略配置，維持續抱"
+    },
+    {
+      "ticker": "2885",
+      "reason_refs": [
+        "I2"
+      ],
+      "reason": "金融核心部位（2885 元大金），權重平衡防禦穩健，符合策略配置，維持續抱"
+    },
+    {
+      "ticker": "3189",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3189 景碩），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "3036",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3036 文曄），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "1802",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（1802 台玻），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "8069",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（8069 元太），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "1303",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（1303 南亞），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "3231",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3231 緯創），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "4958",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（4958 臻鼎-KY），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "2379",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（2379 瑞昱），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "3034",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3034 聯詠），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "3293",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3293 鈊象），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "6415",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（6415 矽力-KY），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "2347",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（2347 聯強），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "2377",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（2377 微星），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "1815",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（1815 富喬），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "2383",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（2383 台光電），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "8046",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（8046 南電），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "1326",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（1326 台化），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "6446",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（6446 藥華藥），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "4938",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（4938 和碩），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    },
+    {
+      "ticker": "3702",
+      "reason_refs": [
+        "I3"
+      ],
+      "reason": "動能持股（3702 大聯大），未觸發連續兩日掉出前 50% 且漲跌幅 > 15% 汰換條件，維持續抱"
+    }
+  ],
+  "orders": [],
+  "agent_metadata": {
+    "model_provider": "google",
+    "model_version": "gemini-3.8-flash",
+    "run_started_at": "2026-10-28T21:54:00+08:00",
+    "run_completed_at": "2026-10-28T21:57:00+08:00",
+    "input_tokens": 15800,
+    "output_tokens": 4100,
+    "tool_use_count": 6,
+    "code_version": "git:feat/pr-1"
+  }
+}
